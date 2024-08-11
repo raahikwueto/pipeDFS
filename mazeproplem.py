@@ -103,8 +103,7 @@ def bfs(graph, source, sink):
 
 
 if __name__ == '__main__':
-    TESTFILE= "/Users/nnamdiikwueto/downloads/sampledata.txt"
-    #"/Users/nnamdiikwueto/downloads/coding_qual_input.txt"
+    TESTFILE= "" 
     lines = read_file(TESTFILE)
     
     sink1 = find_sink(lines)
@@ -126,5 +125,3 @@ if __name__ == '__main__':
     print ("ValidPath with rev:", isvalid)
     print ("ValidPath without :", isvalid2)
     print ("test path:", isvalid3)
-    with open('/Users/nnamdiikwueto/downloads/graph.txt', 'w') as f:
-        f.write(str(graph1))
